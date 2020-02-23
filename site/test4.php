@@ -1,6 +1,6 @@
 <?php
 $total = 0;
-foreach(range(1,33333) as $cnt){
+foreach(range(1,33333　) as $cnt){
   if($cnt % 3 == 0){
     $total = $total + $cnt;
   }
