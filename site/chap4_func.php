@@ -8,5 +8,7 @@ EOM;
   echo $msg;
 }
 
-
+function getPrice($cnt){
+  return 500 * $cnt;
+}
 ?>
