@@ -8,7 +8,7 @@
     <h1>サンプルプログラム</h1>
     <?php
       var_dump("ハロー");
-      echo "<p>ハロー</p>"；
+      echo "<p>ハロー</p>";
     ?>
   </body>
 </html>
