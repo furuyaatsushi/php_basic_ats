@@ -1,4 +1,4 @@
 <?php
-$comment = $_GET["comment"];
+$comment = $_POST["comment"];
 echo $comment;
 ?>
