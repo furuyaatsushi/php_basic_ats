@@ -4,7 +4,7 @@ function h($str){
 }
 function eto($year){
   $etos = ["子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"];
-  return $etos[($years - 4) % 12];
+  return $etos[($year - 4) % 12];
 }
 
 $year = filter_input(INPUT_GET, "year", FILTER_VALIDATE_INT);
@@ -21,6 +21,5 @@ $year = filter_input(INPUT_GET, "year", FILTER_VALIDATE_INT);
     <input name="year" type="number" value="<?= h(date("Y"))?>">
   </form>
 <?php else:?>
-  <p><?= h($year) ?>年は
-<?= eto($year) ?>年です。</p>
+  <p><?= h($year) ?>年は<?= eto($year) ?>年です。</p>
 <?php endif; ?>
