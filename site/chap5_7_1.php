@@ -15,3 +15,8 @@ $year = filter_input(INPUT_GET, "year", FILTER_VALIDATE_INT);
 <h1>干支計算機</h1>
 
 <?php if (empty($year)): ?>
+  <p>数字を入力してください</p>
+  <form metod="get">
+    <label>年</label>:
+    <input name="year" type="number" value="<? = h(date("Y"))?>">
+  </form>
