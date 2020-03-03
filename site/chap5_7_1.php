@@ -9,3 +9,7 @@ function eto($year){
 
 $year = filter_input(INPUT_GET, "year", FILTER_VALIDATE_INT);
 ?>
+
+<!DOCTYPE html>
+<title>干支計算機</title>
+<h1>干支計算機</h1>
