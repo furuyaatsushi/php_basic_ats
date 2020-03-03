@@ -18,5 +18,9 @@ $year = filter_input(INPUT_GET, "year", FILTER_VALIDATE_INT);
   <p>数字を入力してください</p>
   <form metod="get">
     <label>年</label>:
-    <input name="year" type="number" value="<? = h(date("Y"))?>">
+    <input name="year" type="number" value="<?= h(date("Y"))?>">
   </form>
+<?php else:?>
+  <p><?= h($year) ?>年は
+<?= eto($year) ?>年です。</p>
+<?php endif; ?>
